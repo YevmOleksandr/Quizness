@@ -28,6 +28,12 @@ const data = {
                     questionText: "Who teaches Web Technologies and Web Design at the UZHNU?",
                     options: ["Buchuk", "Sergiyko", "Vapnichniy", "Petsko"],
                     answer: "Buchuk"
+                },
+                {
+                    questionId: 4,
+                    questionText: "AI - ...",
+                    options: ["Artificial intelligence", "Ancient Index", "Air Invasion"],
+                    answer: "Artificial intelligence"
                 }
             ]
         }

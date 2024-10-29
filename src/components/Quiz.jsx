@@ -42,7 +42,7 @@ const Quiz = () => {
                     <p>Your score: {score} out of {quiz.questions.length}</p>
                 </div>
             ) : (
-                <div className="question-container"> {/* Контейнер для питання і відповідей */}
+                <div className="question-container">
                     <h3>Question {currentQuestionIndex + 1}:</h3>
                     <p>{quiz.questions[currentQuestionIndex].questionText}</p>
                     <div className="options">

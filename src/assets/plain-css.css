@@ -39,11 +39,11 @@ button {
     background-color: #278bd9; /* Фон кнопки */
     color: white; /* Колір тексту */
     border: none; /* Без обрамлення */
-    border-radius: 4px; /* Закруглені кути */
+    border-radius: 8px; /* Закруглені кути */
     cursor: pointer; /* Змінити курсор на pointer */
     font-size: 1rem; /* Розмір шрифту */
     transition: background-color 0.3s ease; /* Плавний перехід */
-    margin: 4px 25px;
+    margin: 15px 25px;
 }
 
 button:hover {
@@ -85,20 +85,4 @@ p {
     background-color: #5a566e;
     border-radius: 8px;
     color: #ffffff;
-}
-
-.question-container {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #d1ced7;
-    border-radius: 8px;
-    background-color: #716e8d;
-}
-
-.options {
-    margin: 10px 0;
-}
-
-.option {
-    margin: 10px 0;
 }
