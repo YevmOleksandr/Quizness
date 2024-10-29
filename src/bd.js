@@ -25,9 +25,9 @@ const data = {
                 },
                 {
                     questionId: 3,
-                    questionText: "What is the largest ocean on Earth?",
-                    options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-                    answer: "Pacific Ocean"
+                    questionText: "Who teaches Web Technologies and Web Design at the UZHNU?",
+                    options: ["Buchuk", "Sergiyko", "Vapnichniy", "Petsko"],
+                    answer: "Buchuk"
                 }
             ]
         }

@@ -3,9 +3,11 @@ import React from 'react';
 
 function Home() {
     return (
-        <div>
-            <h2></h2>
-        </div>
+        <header className="header">
+            <h1>📋 Quizness</h1>
+            <p>Worst quiz experience you ever had...</p>
+        </header>
+
     );
 }
 

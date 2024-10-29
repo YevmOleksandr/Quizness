@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Link, Navigate,Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Navigate, Route, Routes } from 'react-router-dom';
 
 import data from './bd';
 import Home from './components/Home';
 import Login from './components/Login';
+import Quiz from './components/Quiz';
+import QuizSelection from './components/QuizSelection';
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,15 +28,17 @@ function App() {
     return (
         <Router>
             <div className="container">
-                <header className="header">
-                    <h1>📋 Quizness</h1>
-                    <p>Worst quiz experience you ever had...</p>
-                </header>
 
                 <nav className="menu">
                     <Link to="/">
                         <button>Home</button>
                     </Link>
+
+                    {isLoggedIn && (
+                        <Link to="/quiz-selection">
+                            <button>Select a Quiz</button>
+                        </Link>
+                    )}
 
                     {isLoggedIn ? (
                         <button onClick={handleLogout}>Logout</button>
@@ -52,6 +56,18 @@ function App() {
                             path="/login"
                             element={
                                 isLoggedIn ? <Navigate to="/" /> : <Login onLogin={handleLogin} />
+                            }
+                        />
+                        <Route
+                            path="/quiz-selection"
+                            element={
+                                isLoggedIn ? <QuizSelection /> : <Navigate to="/" />
+                            }
+                        />
+                        <Route
+                            path="/quiz/:id"
+                            element={
+                                isLoggedIn ? <Quiz /> : <Navigate to="/" />
                             }
                         />
                     </Routes>
