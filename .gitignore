@@ -146,4 +146,4 @@ psd
 thumb
 sketch
 .idea
-src/firebase.js
+src/hooks/firebase.js
