@@ -29,55 +29,55 @@ body {
 }
 
 .menu {
-    display: flex; /* Включаємо Flexbox */
-    margin-bottom: 2rem; /* Додатковий відступ під кнопками */
-    width: 100%; /* Ширина контейнера */
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
 }
 
 button {
-    padding: 10px 20px; /* Внутрішні відступи */
-    background-color: #278bd9; /* Фон кнопки */
-    color: white; /* Колір тексту */
-    border: none; /* Без обрамлення */
-    border-radius: 8px; /* Закруглені кути */
-    cursor: pointer; /* Змінити курсор на pointer */
-    font-size: 1rem; /* Розмір шрифту */
-    transition: background-color 0.3s ease; /* Плавний перехід */
+    padding: 10px 20px;
+    background-color: #278bd9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
     margin: 15px 25px;
 }
 
 button:hover {
-    background-color: #0c72bc; /* Зміна кольору при наведенні */
+    background-color: #0c72bc;
 }
 
 button:disabled {
-    background-color: #ccc; /* Сірий фон для неактивних кнопок */
-    cursor: not-allowed; /* Курсор не дозволений */
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
 input {
-    width: 100%; /* Поля на всю ширину контейнера */
-    padding: 10px; /* Внутрішні відступи */
-    border: 1px solid #ccc; /* Обрамлення */
-    border-radius: 4px; /* Закруглені кути */
-    font-size: 1rem; /* Розмір шрифту */
-    margin-bottom: 15px; /* Відстань між полями */
-    transition: border-color 0.3s ease; /* Плавний перехід для обрамлення */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
 }
 
 input:focus {
-    border-color: #278bd9; /* Колір обрамлення при фокусі */
-    outline: none; /* Прибрати стандартне обрамлення */
+    border-color: #278bd9;
+    outline: none;
 }
 
 h1,h2,h3{
-    text-align: center; /* Центрування тексту */
-    margin: 2rem 0; /* Відступи */
+    text-align: center;
+    margin: 2rem 0;
 }
 
 p {
-    text-align: center; /* Центрування тексту */
-    margin: 2rem 0; /* Відступи */
+    text-align: center;
+    margin: 2rem 0;
 }
 .quiz {
     margin: 20px;
