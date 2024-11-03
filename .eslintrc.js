@@ -27,7 +27,7 @@ const config = {
                 extensions: ['.js', '.jsx'],
             },
             webpack: {
-                // if not set, import won't work properly with aliases f.e. import Header from '@components/Header'
+                // if not set, import won't work properly with aliases f.e. import Header from '@pages/Header'
                 config: './config/webpack.development.config.js',
             },
         },

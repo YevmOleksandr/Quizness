@@ -7,8 +7,8 @@ function Login({ onLogin }) {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (error_) => {
+        error_.preventDefault();
         if (onLogin(username, password)) {
             navigate('/');
         } else {

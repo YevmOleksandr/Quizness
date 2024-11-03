@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Link, Navigate, Route, Routes } from 'react-router-dom';
 
 import data from './bd';
-import Home from './components/Home';
-import Login from './components/Login';
-import Quiz from './components/Quiz';
-import QuizSelection from './components/QuizSelection';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Quiz from './pages/Quiz';
+import QuizSelection from './pages/QuizSelection';
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -27,8 +27,7 @@ function App() {
 
     return (
         <Router>
-            <div className="container">
-
+            <div className="container" data-testid="app"> {/* Додано data-testid */}
                 <nav className="menu">
                     <Link to="/">
                         <button>Home</button>

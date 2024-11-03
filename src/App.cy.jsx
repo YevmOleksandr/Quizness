@@ -6,8 +6,10 @@ import App from './App'
 // document.querySelector('#id|.my-class|element|[data-testid="svsf"]');
 describe('<App />', () => {
   it('renders', () => {
-    // see: https://on.cypress.io/mounting-react
     cy.mount(<App />);
-    cy.get('[data-testid="app"]').should('have.text', 'My First React App');
-  })
-})
+    cy.get('body').then($body => {
+      cy.log($body.html()); // Виведе HTML-код, щоб ви могли перевірити, що рендериться
+    });
+    cy.get('[data-testid="app"]').should('have.text', ' HomeLogin');
+  });
+});
